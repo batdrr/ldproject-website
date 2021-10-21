@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Inter", sans-serif;
+}
+
+.contactform {
+  width: 600px;
+  max-width: 800px;
+  margin: auto auto 8.65rem;
+  height: 400px;
+  max-height: 500px;
+  z-index: -1;
+  padding: 0;
+}
+
+/* Contact.js */
+.form {
+  margin: 4rem auto;
+  padding: 0;
+  max-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+.form > h1 {
+  margin-bottom: 30px;
+  color: #1d777c;
+}
+
+.form > input,
+textarea {
+  padding: 20px;
+  border-radius: none;
+  /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137); */
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  /* border: none; */
+  background: #fff;
+  font-size: 16px;
+  color: rgb(0, 0, 32);
+  outline: none;
+}
+
+.form > input:focus,
+textarea:focus {
+  border: 1px solid #1d777c;
+}
+
+.form > textarea {
+  height: 150px;
+  max-width: 600px;
+  min-height: 100px;
+}
+
+.form > label {
+  padding-bottom: 10px;
+  color: #1d777c;
+  font-weight: bold;
+}
+
+.form > button {
+  padding: 20px;
+  border: none;
+  background-color: #1d777c;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 10px;
+}
+
+.form > button:hover {
+  background-color: rgb(0, 0, 196);
+}
+
+@media screen and (min-width: 768px){
+  .contactform {
+    height: 100rem;
+  }
+}
+
+@media screen and (min-width: 480px){
+  .contactform {
+    height: 50rem;
+    padding: 0 3rem 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .contactform {
+    width: 300px;
+    margin: auto auto 8.65rem;
+    height: 400px;
+    padding: 0;
+  }
+}

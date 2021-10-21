@@ -1,0 +1,15 @@
+#container{
+    width: 100%;
+}
+
+#email {
+    width: 100%;
+    padding-top: 10rem;
+}
+
+@media screen and (max-width: 540px) {
+    #email {
+        width: 100%;
+        padding-top: 4rem;
+    }
+  }
